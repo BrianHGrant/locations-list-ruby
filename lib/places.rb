@@ -17,4 +17,8 @@ class Place
     @@all_locations.push(self)
   end
 
+  define_singleton_method(:clear) do
+    @@all_locations = []
+  end
+
 end
